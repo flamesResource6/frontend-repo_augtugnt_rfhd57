@@ -1,6 +1,6 @@
 import React from 'react'
 import Spline from '@splinetool/react-spline'
-import PortalCanvas from './PortalCanvas'
+import WebGPUPortal from './WebGPUPortal'
 
 export default function Hero() {
   return (
@@ -10,8 +10,8 @@ export default function Hero() {
         <Spline scene="https://prod.spline.design/no-S8HKPA9ln9-NN/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
-      {/* Portal particle canvas overlay */}
-      <PortalCanvas />
+      {/* WebGPU particle portal overlay with fallback */}
+      <WebGPUPortal />
 
       {/* Atmospheric overlays */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#0b0b15]/40 via-[#0b0b15]/30 to-[#0b0b15]/70" />
